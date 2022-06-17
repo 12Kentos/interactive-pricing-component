@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="pricing-heading">
+      <h3 class="heading-tertiary">Simple, traffic-based pricing</h3>
+      <p class="heading-text">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </div>
+
+    <div class="pricing">
+      <div class="pricing__info">
+        <p class="pricing__pageviews">100K Pageviews</p>
+        <p class="pricing__model">
+          <span class="pricing__amount"
+            >$<span class="easy-way-out">16</span>.00</span
+          ><span class="pricing__time">/ month</span>
+        </p>
+      </div>
+      <div class="selector-wrapper">
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          class="pricing__slider"
+        />
+        <div class="selector">
+          <div class="selectorbtn"></div>
+        </div>
+        <div class="progress-bar"></div>
+      </div>
+      <div class="pricing__range">
+        <p class="pricing__monthly">Monthly Billing</p>
+        <input type="checkbox" class="pricing__switch" />
+        <p class="pricing__yearly">Yearly Billing</p>
+      </div>
+      <div class="pricing__trial">
+        <ul class="pricing__stats">
+          <li class="pricing__item">
+            <img
+              src="images/icon-check.svg"
+              alt="Checkmark"
+              class="pricing__checkmark"
+            />
+            <p class="pricing__perks">Unlimited websites</p>
+          </li>
+          <li class="pricing__item">
+            <img
+              src="images/icon-check.svg"
+              alt="Checkmark"
+              class="pricing__checkmark"
+            />
+            <p class="pricing__perks">100% data ownership</p>
+          </li>
+          <li class="pricing__item">
+            <img
+              src="images/icon-check.svg"
+              alt="Checkmark"
+              class="pricing__checkmark"
+            />
+            <p class="pricing__perks">Email reports</p>
+          </li>
+        </ul>
+        <a href="#" class="pricing__btn">Start my trial</a>
+      </div>
+    </div>
+  </body>
+</html>
